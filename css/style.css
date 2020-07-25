@@ -68,3 +68,9 @@ body {
   color: floralwhite;
   font-size: 1.2em;
 }
+
+#carouselButton {
+  right: 0px;
+  position: absolute;
+  bottom: 0px;
+}
