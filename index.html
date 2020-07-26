@@ -1,7 +1,7 @@
-<!--Assignment 3 - Task 1 starts at line 80-->
-<!--Assignment 3 - Task 1 starts at line 80-->
-<!--Assignment 3 - Task 1 starts at line 80-->
-<!--Assignment 3 - Task 1 starts at line 80-->
+<!--Assignment 4 - Task 1 .scss file is attached-->
+
+<!--Assignment 4 - Task 1,2 and 3 starts at line 575-->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +29,7 @@
       href="node_modules/bootstrap-social/bootstrap-social.css"
     />
     <!--External style sheet-->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Ristorante Con Fusion</title>
   </head>
 
@@ -71,9 +71,9 @@
             </li>
           </ul>
           <span class="navbar-text ml-auto">
-            <a data-toggle="modal" data-target="#loginModal">
-              <span class="fa fa-sign-in"></span>Login
-            </a>
+            <a id="loginButton" class="login">
+              <span class="fa fa-sign-in"></span>Login</a>
+            
           </span>
         </div>
       </div>
@@ -231,7 +231,7 @@
 
     <!--Login Modal-->
     <div id="loginModal" class="modal fade" role="dialog">
-      <div class="modal-dialog" role="content">
+      <div class="modal-dialog modal-lg" role="content">
         <div class="modal-content">
           <div class="modal-header">
             <h4 class="modal-title">Login</h4>
@@ -309,8 +309,7 @@
             <button
               type="button"
               class="btn btn-block btn-lg btn-warning"
-              data-toggle="modal"
-              data-target="#reservationModal"
+              id="reserveButton"
             >
               Reserve Table
             </button>
@@ -573,6 +572,12 @@
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
             });
+      $("#loginButton").click(function(){
+        $("#loginModal").modal("show");
+      });
+      $("#reserveButton").click(function(){
+        $("#reservationModal").modal("show");
+      });
     </script>
   </body>
 </html>

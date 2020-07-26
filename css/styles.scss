@@ -1,3 +1,5 @@
+//Assignment 4 starts at line 80
+
 $lt-gray: #ddd;
 $background-dark: #512da8;
 $background-light: #9575cd;
@@ -73,4 +75,21 @@ body {
   position: absolute;
   bottom: 0px;
   z-index: 1;
+}
+
+.modal-header {
+  background-color: $background-dark;
+  border: 0px;
+  color: floralwhite;
+  .close {
+    color: floralwhite;
+  }
+}
+
+.modal-body {
+  background-color: $background-pale;
+}
+
+.login {
+  cursor: pointer;
 }
